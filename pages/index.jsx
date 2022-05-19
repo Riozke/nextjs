@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import Head from 'next/head'
+import Image from 'next/image'
 import { useEffect, useState } from 'react'
 import Footer from '../components/Footer'
 
@@ -29,10 +30,19 @@ export default function Home(initialData) {
     <>
       <div className="container">
         <Head>
-          <title>Create Next App</title>
+          <title>Giphy Search App</title>
+          <meta name='description' content="Love gihpys? We do too. Use our advanced giphy search to find the perfect giphy for any ocation"></meta>
           <link rel="icon" href="favicon.ico" />
           <link rel="stylesheet" href="/styles.css" /> 
         </Head>
+
+        {/* <div className='logo-container'>
+          <Image 
+            src='/logo.png'
+            alt='logo'
+            unsized
+          />
+        </div> */}
 
         <h1>Giphy Search App</h1>
 
